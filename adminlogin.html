@@ -1,0 +1,187 @@
+<!doctype html>
+<html> 
+ <head> 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script> 
+  <link xx x" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+ <style type="text/css" id="dcoder_stylesheet">*{
+  margin:0;
+  padding:0;
+}
+body{
+  background:#ecf0f3;
+  font-family: sans-serif;
+}
+.container{
+  width:820px;
+  height: 1400px;
+  border-radius: 25px;
+  background: #ecf0f3;
+  box-shadow:  11px 11px 22px #c2c5c7,-11px
+ -11px 22px #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+input{
+  padding-left: 20px;
+  width:650px;
+  height:100px;
+  border-radius: 15px;
+  background: #ecf0f3;
+  box-shadow: inset 5px 5px 10px #c6cacc,inset -5px -5px 10px #ffffff;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  font-size: 38px;
+  padding-left:80px;
+  font-weight: 400;
+}
+.inputContain{
+  margin-top: 80px;
+  margin-left: 44px;
+}
+label{
+  font-size: 30px;
+  color: grey;
+  font-weight: 500;
+}
+button{
+  width: 720px;
+  height: 100px;
+  font-size: 42px;
+  color:white;
+  border-radius: 26px;
+background: #24cfaa;
+ font-weight: bold;
+  border: none;
+  margin-top: 120px;
+  border-radius: 15px;
+}
+span{
+  margin-top: 50px;
+  position: absolute;
+  margin-left: 470px;
+  font-size: 30px;
+  color: grey;
+  text-decoration: underline;
+}
+ul{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 30px;
+  margin-top: 30px;
+  position: absolute;
+  color: grey;
+  font-weight: 500;
+  margin-left: 50px;
+}
+img{
+  width:150px;
+  margin-top:140px;
+  margin-left: 330px;
+ // position: absolute;
+  border-radius: 60px;
+}
+h1{
+  margin-top:15px;
+  //position: absolute;
+  text-align: center;
+  color: grey;
+  font-size: 38px;
+}
+h2{
+ margin-top: 10px;
+  text-align: center;
+  color: grey;
+  font-weight: 450;
+}
+.own{
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: #24cfaa;
+  text-decoration-thickness: 5px;
+  color: #24cfaa;
+  
+}
+a{
+  text-decoration: none;
+  text-decoration-color: #24cfaa;
+  color: grey;
+}
+li:hover{
+  color:#24cfaa;
+  transition: 0.3s;
+}
+.swal2-popup{
+  border-radius:10px;
+  height:800px;
+  font-size: 25px;
+  font-family: monospace;
+  width:800px;
+  }
+  h3{
+    text-align:center;
+    color: grey;
+    margin-top: 80px;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+ .head{
+   width:100%;
+   height:120px;
+   border-radius: 0px;
+background: #ecf0f3;
+box-shadow:  6px 6px 12px #d4dbe6,
+             -6px -6px 12px #f4fdff;
+ }
+ h4{
+   margin-left: 90px;
+   margin-top: 46px;
+   position: absolute;
+   font-size: 29px;
+   color: grey;
+ }</style></head> 
+ <body> 
+  <div class="head"> 
+   <h4>OFFICIAL LOGIN PORTAL <i class="" aria-hidden="true" style="color:grey;font-size: 46px;"></i></h4> 
+  </div> 
+  <div class="container"> 
+   <ul> 
+    <li class="own">Admin Login</li>| <a href="index.html"> <li>Faculty Login</li></a> 
+   </ul> 
+   <img src="https://lh3.googleusercontent.com/pw/AL9nZEUk2D4SBNmc5aFZE-ArFPW-9L9dXN5qM6cYkVLNMQVEqpeGTEuwt4eHi4JI8yROuYGn1dehgTdzzVDlalpBC-aydFxrWoc4YJDNbVrgEEZse3q3KwtDjaZunfSv9QO0f6sg3TRRagBHy6uaT3QT4ccJ=w649-h661-no?authuser=0"> 
+   <h1>MAJLIS POLYTECHNIC COLLEGE <br>★★★</h1> 
+   <h2>DIGITAL LAB INSPECTION SYSTEM</h2> 
+   <div class="inputContain"> <label>User Id</label> 
+    <br> <i class="fa fa-user" aria-hidden="true" style="position:absolute;font-size:55px;color:#24cfaa;margin-top:40px;margin-left: 20px;"></i> 
+    <input id="userName" type="text"> 
+    <br> 
+    <br> 
+    <br> <label>Password</label> 
+    <br> <i class="fa fa-lock" aria-hidden="true" style="position:absolute;font-size:55px;color:#24cfaa;margin-top:40px;margin-left: 20px;"></i> 
+    <input id="password" type="password"> 
+    <br> <span>Forgot Password?</span> 
+    <br> <button onclick="show()">Login</button> 
+   </div> 
+   <h3>Designed and Developed by the <br> Departme nt of Computer Engineeringing<br>Since 2020-2023</h3> 
+  </div> 
+ 
+<script type="text/javascript" id="dcoder_script">function show(){
+  var user = document.getElementById("userName").value
+  var password = document.getElementById("password").value
+
+if(user == "Hamsa" && password == "Hamsa@123"){
+  window.location.assign("adminhome.html");
+}else{
+ Swal.fire({
+  icon: 'warning',
+  title: "<b>Enterd Incorrect Details<br>",
+  html: "Username or Password is incorrect",  
+  confirmButtonText: "<b>Go back",
+  confirmButtonColor: "grey",
+})
+}
+
+}</script></body></html>

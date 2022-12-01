@@ -1,0 +1,559 @@
+<!doctype html>
+<html> 
+ <head> 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script> 
+  <link xx x" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+ <style type="text/css" id="dcoder_stylesheet">*{
+  margin:0;
+  padding:0;
+}
+.head{
+  width:100%;
+  height: 280px;
+  border-radius: 23px;
+background: #ecf0f3;
+box-shadow:  5px 8px 10px #ccd0d2,
+             -5px -5px 10px #ffffff;
+}
+body{
+  font-family: sans-serif;
+  background: #ecf0f3;
+ 
+}
+.logo{
+  width:150px;
+  border-radius: 100%;
+  margin-left: 409px;
+  margin-right: auto;
+  margin-top : 20px;
+}
+h1{
+  color: grey;
+  text-align :center ;
+  font-size: 40px;
+}
+h2{
+  text-align: center;
+  color: grey;
+  
+}
+.prof{
+  width:150px;
+  border-radius: 100%;
+  //border: 8px solid ;
+  margin-left:60px;
+  margin-top:60px;
+}
+.name{
+  font-size: 35px;
+  font-weight: 5000;
+  margin-top: 140px;
+  position:absolute;
+  margin-left: 9px;
+}
+.dep{
+  color: grey;
+  font-size:21.5px;
+  margin-top: 190px;
+  position: absolute;
+  margin-left: 5px;
+}
+.active{
+  width:30%;
+  height:60px;
+  background: green;
+}
+.inch{
+  position: absolute;
+  margin-top: 190px;
+  margin-left:430px;
+  font-size: 21.5px;
+  color: green;
+  font-weight: ;
+}
+.wrapper{
+  width:80%;
+  height:500px;
+  border-radius: 15px;
+  background: #ecf0f3;
+  box-shadow: inset 5px 5px 10px #c6cacc,inset -5px -5px 10px #ffffff;
+  margin-left: 85px;
+  margin-top: 70px;
+  
+}
+.dataContain{
+  background: #ecf0f3;
+  border-radius: 20px;
+  box-shadow:  11px 11px 22px #c2c5c7,-11px
+ -11px 22px #ffffff;
+ height:890px;
+ width:90%;
+ margin-left: 55px;
+ margin-top: 48px;
+}
+h3{
+ 
+  margin-top:50px;
+  margin-left:85px;
+  font-size:30px;
+  padding-top: 50px;
+  font-weight: bold;
+}
+button{
+  width:52.5%;
+  height:73px;
+  background: #24cfaa;
+  border: none;
+  border-radius: 8px;
+  margin-left: 45px;
+  margin-top: 70px;
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  
+}
+span{
+  margin-top: -50px;
+  position: absolute;
+  font-size:31px;
+  font-weight: bold;
+  color: grey;
+}
+.btn{
+  display: flex;
+  margin-top: -40px;
+  margin-left: 40px;
+}
+.canc{
+  background: grey;
+  width:26.5%;
+}
+h4{
+  text-align: center;
+  color:red;
+  margin-top:30px;
+  font-size:25px;
+  font-weight: 400;
+}
+.file{
+  margin-top: 30px;
+  font-size:30px;
+  margin-left: 30px;
+  color: black;
+}
+.swal2-popup{
+  border-radius:10px;
+  height:750px;
+  font-size: 25px;
+  font-family: monospace;
+  width:700px;
+  font-family: sans-serif;
+  over-flow:hidden;
+}
+table{
+  background: #ecf0f3;
+  border-radius: 14px;
+  box-shadow:  11px 11px 22px #c2c5c7,-11px
+ -11px 22px #ffffff;
+  width: 89%;
+ position: absolute;
+ text-align: center;
+ margin-top: 115px;
+ margin-left:60px;
+ font-size:33px;
+ height:170px;
+ 
+}
+
+.resp{
+  margin-top: 59px;
+  margin-left:60px;
+  font-size: 33px;
+  font-weight: 500;
+}
+th{
+  padding:10px;
+  background: #ecf0f3;
+  box-shadow: inset 5px 5px 10px #c6cacc,inset -5px -5px 10px #ffffff;
+}
+td{
+  padding:20px;
+  background: #ecf0f3;
+  box-shadow: inset 5px 5px 10px #c6cacc,inset -5px -5px 10px #ffffff;
+}
+.sat{
+  //font-weight: bold;
+  color: white;
+  background:green;
+  border-radius: 5px;
+  width: 170px;
+  font-size: 26px;
+  padding: 7px;
+  margin-left:25px;
+}
+.uns{
+  color: white;
+  background:red;
+  border-radius: 5px;
+  width: 170px;
+  font-size: 26px;
+  padding: 7px;
+  margin-left:25px;
+}
+.text{
+  text-align:center;
+  font-size:25px;
+}
+
+
+
+
+
+.container{
+  height: 350px;
+  width: 890px;
+  position: relative;
+  margin-top: -30px;
+}
+.container .wrapper{
+  position: relative;
+  //border-radius: 11px;
+background: #ecf0f3;
+box-shadow: inset 5px 5px 10px #c2c5c7,
+            inset -5px -5px 10px #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.wrapper.active{
+  border: none;
+}
+.wrapper.imag{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper imh{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.wrapper .icon{
+  font-size: 150px;
+  color: grey;
+}
+.wrapper .text{
+  font-size: 20px;
+  font-weight: 500;
+  color: #5B5B7B;
+}
+.wrapper #cancel-btn i{
+  position: absolute;
+  font-size: 20px;
+  right: 15px;
+  top: 15px;
+  color: #9658fe;
+  cursor: pointer;
+  display: none;
+}
+.wrapper.active:hover #cancel-btn i{
+  display: block;
+}
+.wrapper #cancel-btn i:hover{
+  color: #e74c3c;
+}
+.wrapper .file-name{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 26px;
+  color: #fff;
+  display: none;
+  background: #24cfaa;
+  padding-left: 40px;
+}
+.wrapper.active:hover .file-name{
+  display: block;
+}
+.container #custom-btn{
+  margin-top: -01px;
+  margin-left: 370px;
+  width: 15%;
+  height: 70px;
+  border: none;
+  outline: none;
+ border-radius: 0px;
+background: #ecf0f3;
+box-shadow:  5px 5px 10px #d9dde0,
+             -5px -5px 10px #ffffff;
+
+ 
+
+}
+.buttons{
+  display: flex;
+  margin-left:36px;
+  border-radius: 2px;
+  margin-top: -50px;
+}
+#cancel-btn{
+  width: 215px;
+  background:grey;
+}
+.warn{
+  font-size: 24px;
+  color: red;
+  text-align: center;
+  font-weight: 400;
+  margin-top:18px;
+}
+.image img{
+  max-width: 100%;
+  max-height: 100%;
+ 
+  
+}
+
+
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+ background: #ecf0f3;
+  box-shadow:  11px 11px 22px #c2c5c7,-11px -11px 22px #ffffff;
+
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  font-weight: 500;
+  height:60px;
+  width:502px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 38px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  background: #ecf0f3;
+box-shadow: inset 6px 6px 12px #c4c7ca,
+            inset -6px -6px 12px #ffffff;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 46px;
+  
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.hms{
+  transition img : 0.3s;
+  border-radius:100%;
+  width:170px;
+  height: 170px;
+  margin-left: 40px;
+}
+span{
+  margin-left:230px;
+  //position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+  color: grey;
+  
+  transition: 0.3s;
+}
+.ad{
+  color:green;
+}
+.hda{
+  margin-top: -40px;
+}
+.sep{
+  height:100px;
+  width:200px;
+}
+.seprt{
+  height: 50px;
+}
+center{
+  margin-top: 940px;
+  font-size: 20px;
+}
+h5{
+  //margin-top: 900px;
+  font-size: 35px;
+  text-align: center;
+}
+p{
+  text-align: center;
+  font-size: 25px;
+  margin-top:50px;
+}</style></head> 
+ <body> 
+  <div class="head"> <i onclick="openNav()" class="fa fa-bars" aria-hidden="true" style="font-size:36px;background:grey;
+ padding:10px; color:white;border-radius: 7px;
+ margin-left:50px;position:absolute;margin-top:20px
+ ;"></i> 
+   <div id="mySidenav" class="sidenav"> 
+    <img class="hms" src="https://i.ibb.co/0BQkvdx/Screenshot-20221108-195314-4.png"> 
+    <div class="hda"> 
+     <br> <span id="pp">MISAB PUTHUSSERY</span> 
+     <br> <span id="pp">DEP : COMPUTER ENGINEERING</span> 
+     <br> <span id="pp" class="ad">IN-CHARGE : CT LAB</span> 
+     <div class="sep"></div> 
+     <br> <a href="#"> <i class="fa fa-home"></i> Home</a> 
+     <div class="seprt"></div> <a href="#"> <i class="fa fa-question-circle"></i> Help</a> 
+     <div class="seprt"></div> <a href="index.html"> <i class="fa fa-sign-out"></i> Logout</a> 
+     <p>BETA VERSION : 0.1</p> 
+     <center> 
+      <h5>D-LIS SOFTWARE </h5> DEVELOPED AND DESIGNED BY 
+      <br>THE DEPARTMENT OF COMPUTER ENGINEERING 
+      <br>BATCH : 2020-2023 
+     </center> 
+    </div> 
+   </div> 
+   <img class="logo" src="https://lh3.googleusercontent.com/pw/AL9nZEUk2D4SBNmc5aFZE-ArFPW-9L9dXN5qM6cYkVLNMQVEqpeGTEuwt4eHi4JI8yROuYGn1dehgTdzzVDlalpBC-aydFxrWoc4YJDNbVrgEEZse3q3KwtDjaZunfSv9QO0f6sg3TRRagBHy6uaT3QT4ccJ=w649-h661-no?authuser=0"> 
+   <h1>MAJLIS POLYTECHNIC COLLEGE <i class="fa fa-icycle" aria-hidden="true" style="position:absolute;font-size:55px;
+   color:#24cfaa;margin-top:
+    -150px;margin-left: -700px;"></i> </h1> 
+   <h2>WECOME, DEPARTMENT OF COMPUTER ENGINEERING </h2> 
+  </div> 
+  <img class="prof" src="https://i.ibb.co/0BQkvdx/Screenshot-20221108-195314-4.png" alt="Screenshot-20221108-195314-4" border="0"> <span class="name">MISAB PUTHUSSERY</span> <span class="dep">DEPARTMENT : COMPUTER ENGINEERING |</span> <span class="inch"> IN-CHARGE: COMPUTER LAB</span> 
+  <div onclick="closeNav()" class="dataContain"> 
+   <h3>CAPTURE LIVE VIEW</h3> 
+   <div class="container"> 
+    <div class="wrapper"> 
+     <div class="image"> 
+      <img class="fuck" src="" alt=""> 
+     </div> 
+     <div class="content"> 
+      <div class="icon"> <i class="fa fa-cloud-upload" style="position:absolute; margin-left:-80px;
+       margin-top: -70px;"></i> 
+      </div> 
+      <div class="text"> 
+      </div> 
+     </div> 
+     <div class="file-name">
+       File name here 
+     </div> 
+    </div> <button onclick="defaultBtnActive()" id="custom-btn"> <i class="fa fa-camera" style="font-size:46px;color:grey"></i> </button> 
+    <input id="default-btn" type="file" accept="image/*" capture="camera" hidden> 
+    <h6 class="warn">Note: Ensure that before uploading the picture its clear and visible</h6> 
+    <div class="buttons"> <button id="cancel-btn">Cancel</button> <button id="upBtn" onclick="passImg()">Upload</button> 
+    </div> 
+   </div> 
+  </div> <span class="resp">ADMIN - RESPONSE</span> 
+  <table> 
+   <tbody> 
+    <tr> 
+     <th>Date</th> 
+     <th>Time</th> 
+     <th>Response</th> 
+     <th>Message</th> 
+    </tr> 
+    <tr> 
+     <td>23/02/22</td> 
+     <td>12:47 PM</td> 
+     <td><h6 class="sat">Satisfied</h6></td> 
+     <th>good</th> 
+    </tr> 
+    <tr> 
+     <td>23/02/22</td> 
+     <td>1:14 PM</td> 
+     <td>Waiting...</td> 
+     <th style="font-weight: 400">Waiting...</th> 
+    </tr> 
+   </tbody> 
+  </table> 
+  <img id="passedData" src=""> 
+ 
+<script type="text/javascript" id="dcoder_script">Swal.fire({
+   
+   icon: 'success',
+   title: "LOGIN SUCCESS",
+   html: "Mr.Mishab Pudhussery<br><br>Department: Computer Engineering",  
+   confirmButtonText: "<b>Continue",
+})
+ 
+   const wrapper = document.querySelector(".wrapper");
+   const fileName = document.querySelector(".file-name");
+   const defaultBtn = document.querySelector("#default-btn");
+   const customBtn = document.querySelector("#custom-btn");
+   const cancelBtn = document.querySelector("#cancel-btn");
+   const img = document.querySelector(".fuck");
+   let regExp = /[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
+   function defaultBtnActive(){
+        defaultBtn.click();
+   }
+   defaultBtn.addEventListener("change", function(){
+   const file = this.files[0];
+   if(file){
+        const reader = new FileReader();
+        reader.onload = function(){
+        const result = reader.result;
+        img.src = result;
+        wrapper.classList.add("active");
+     }
+       
+      cancelBtn.addEventListener("click", function(){
+        img.src = "";
+        wrapper.classList.remove("active");
+     
+     
+        })
+        reader.readAsDataURL(file);
+        }
+        if(this.value){
+             let valueStore = this.value.match(regExp);
+             fileName.textContent = valueStore;
+           }
+    });
+ 
+
+
+   
+   function passImg(){
+       const capturedPic = document.querySelector("input").value;
+       if(document.querySelector("input").files.length == 0) {
+          alert("No picture captured ")
+       }
+   }
+  
+ 
+
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "600px";
+  }
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  
+}</script></body></html>
